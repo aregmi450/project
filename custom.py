@@ -2,38 +2,39 @@ import pymongo
 connection = pymongo.MongoClient('localhost', 27017)
 database = connection['FaceRecognition']
 collection = database['Data']
+
 data = ([{
+    'std_id': 0o1,
     'First Name': "Arun ",
     'Last Name': "Regmi",
-    'StudentNo': 1,
     'Attended Days': "",
     'Image': "IMG/arun.jpg"
              },
     {
+     'std_id': 0o2,
      'First Name': "Abhinav",
       'Last Name':"Arya",
-     'StudentNo': 2,
      'Attended Days': "",
      'Image': "IMG/arya.jpg"
      },
     {
+        'std_id': 0o3,
       'First Name': "Asim",
       'Last Name': "Mahat",
-      'StudentNo': 3,
       'Attended Days': "",
       'Image': "IMG/asim.jpg"
      },
     {
+       'std_id': 0o4,
       'First Name': "Bhabuk",
       'Last Name': "Kunwar",
-      'StudentNo': 4,
       'Attended Days': "" ,
       'Image' : "IMG/bhabuk.jpg"
      },
     {
+        'std_id': 0o5,
       'First Name': "Unique",
       'Last Name': "Karki",
-      'StudentNo': 5,
       'Attended Days': "",
       'Image': "IMG/unique.jpg"
 
